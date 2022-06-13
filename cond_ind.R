@@ -61,7 +61,7 @@ HACBI [pos="0,-1"]
 SVI  [pos="1,-1"]
 RCHSI [pos="1,0.5"]
 Vaccination_rate_.50. [pos="-1,0.5"]
-Hesitant [pos="-2,-0.7"]
+Vaccine_hesitancy [pos="-1,-0.7"]
 
 SVI -> RCHSI
 SVI -> Vaccination_rate_.50.
@@ -71,14 +71,14 @@ HACBI -> Vaccination_rate_.50.
                     
 SVI -> HACBI
                     
-SVI -> Hesitant
-HACBI -> Hesitant
+SVI -> Vaccine_hesitancy
+HACBI -> Vaccine_hesitancy
 
-RCHSI -> Hesitant
+RCHSI -> Vaccine_hesitancy
                                                    
 RCHSI -> Vaccination_rate_.50.
                     
-Hesitant -> Vaccination_rate_.50.
+Vaccine_hesitancy -> Vaccination_rate_.50.
 
 
               }')  
