@@ -46,7 +46,7 @@ data <- data %>% mutate(HACBI = case_when(HACBI < 0.3054229 ~ 1,
 
 
 
-data_dag <- dplyr::select(data, Vaccination_rate_.50., SVI , Vaccine_hesitancy, RCHSI, HACBI)
+data_dag <- dplyr::select(data, low_vaccination_rate, SVI , Vaccine_hesitancy, RCHSI, HACBI)
 
 data_dag <- as.data.frame(data_dag)
 str(data_dag)
