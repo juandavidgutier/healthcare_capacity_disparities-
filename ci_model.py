@@ -107,6 +107,7 @@ model_RCHSI=CausalModel(
                     edge[source "HACBI" target "RCHSI"]
                     edge[source "HACBI" target "low_vaccination_rate"]
                     edge[source "SVI" target "HACBI"]
+			  edge[source "HACBI" target "SVI"]
                     edge[source "SVI" target "Hesitant"]
                     edge[source "HACBI" target "Hesitant"]
                     edge[source "RCHSI" target "Hesitant"]                           
